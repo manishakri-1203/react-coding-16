@@ -1,10 +1,6 @@
 import {Component} from 'react'
 import {v4 as uuidv4} from 'uuid'
  
-<<<<<<< HEAD
-=======
-
->>>>>>> 7d4dd58727c6b3add35a05dfe17b3674c0bc9ae0
 import CommentItem from '../CommentItem'
 import './index.css'
 
@@ -36,11 +32,9 @@ class Comments extends Component {
   }
 
   toggleIsLiked = id => {
-<<<<<<< HEAD
+
     this.setState(prevState => ({
-=======
     this.setstate(prevState => ({
->>>>>>> 7d4dd58727c6b3add35a05dfe17b3674c0bc9ae0
       commentsList: prevState.commentsList.map(eachComment => {
         if (id === eachComment.id){
           return {...eachComment, isLiked: !eachComment.isLiked}
